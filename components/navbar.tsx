@@ -29,17 +29,7 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="relative group text-foreground hover:text-primary transition-colors duration-200"
-            >
-              {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
-            </Link>
-          ))}
-
+         
           {/* Theme Toggle */}
           <Button
             variant="ghost"
