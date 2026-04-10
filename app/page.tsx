@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Code, Share2, X } from "lucide-react"
+import { Mail, MapPin, CheckCircle2 } from "lucide-react"
 import { Spotlight } from "@/components/ui/spotlight"
 import { ContainerTextFlip } from "@/components/ui/container-text-flip"
 import { motion } from "framer-motion"
@@ -97,29 +97,31 @@ export default function Page() {
                 </Link>
               </div>
 
-              {/* Social Icons */}
-              <div className="flex gap-4">
-                <Link
-                  href="#"
-                  className="p-2 rounded-lg border border-border/40 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
-                  title="GitHub"
-                >
-                  <Code className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="#"
-                  className="p-2 rounded-lg border border-border/40 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
-                  title="LinkedIn"
-                >
-                  <Share2 className="w-5 h-5" />
-                </Link>
-                <Link
-                  href="#"
-                  className="p-2 rounded-lg border border-border/40 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
-                  title="Twitter/X"
-                >
-                  <X className="w-5 h-5" />
-                </Link>
+              <div className="flex flex-wrap gap-3">
+                <Button variant="outline" className="rounded-xl px-6">
+                  GitHub
+                </Button>
+                <Button variant="outline" className="rounded-xl px-6">
+                  LinkedIn
+                </Button>
+                <Button variant="outline" className="rounded-xl px-6">
+                  Twitter
+                </Button>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  <span>khairoonmohamed08@gmail.com</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-red-500" />
+                  <span>Mombasa, KE (Remote)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-500" />
+                  <span className="text-green-500">open</span>
+                </div>
               </div>
             </motion.div>
 
