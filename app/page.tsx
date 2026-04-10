@@ -85,14 +85,9 @@ export default function Page() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/projects">
+                <Link href="#projects">
                   <Button size="lg" className="w-full sm:w-auto">
                     View My Work
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                    Contact Me
                   </Button>
                 </Link>
               </div>
